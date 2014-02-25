@@ -1,0 +1,13 @@
+@import 'reset';
+@import 'mixins';
+
+body {
+	font-size: 100% Helvetica, sans-serif;
+	background-color: #efefef;
+
+	h1 {
+		color: red;
+	}
+}
+
+.box { @include border-radius(10px); }
