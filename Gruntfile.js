@@ -32,6 +32,16 @@ module.exports = function (grunt) {
                 }
             }
         },
+        sass: {
+            build: {
+                options: {
+                    style: 'expanded'
+                },
+                files: {
+                    '.build/css/app.css': 'public/css/app.scss'
+                }
+            }
+        },
         makara: {
             files: ['public/templates/**/*.dust'],
             options: {
@@ -92,7 +102,8 @@ module.exports = function (grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-less');
-    
+    grunt.loadNpmTasks('grunt-contrib-sass');
+
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-mocha-cli');
@@ -101,7 +112,7 @@ module.exports = function (grunt) {
     grunt.loadTasks('./node_modules/makara/tasks/');
 
     grunt.registerTask('i18n', ['clean', 'makara', 'dustjs', 'clean:tmp']);
-    grunt.registerTask('build', ['jshint', 'less',  'copyto', 'i18n']);
+    grunt.registerTask('build', ['jshint', 'less', 'sass', 'copyto', 'i18n']);
     grunt.registerTask('test', ['jshint', 'mochacli']);
 
 };

@@ -2,6 +2,6 @@
 
 module.exports = function IndexModel() {
 	return {
-        name: 'LiferayApp4'
+        name: 'LiferayApp1'
     };
 };
