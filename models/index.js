@@ -2,6 +2,7 @@
 
 module.exports = function IndexModel() {
 	return {
-        name: 'LiferayApp1'
+        name: 'LiferayApp - Home page',
+        homePageClass: 'active'
     };
 };

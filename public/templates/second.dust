@@ -1,12 +1,12 @@
 {>"layouts/master" /}
 
 {<title}
-	Home page
+	Second page
 {/title}
 
 {<content_left}
   <p>
-  	This is an example content on the main page.
+  	This is an example content on the second page.
   </p>
 
   <p>
@@ -16,7 +16,7 @@
 
 {<content_right}
 	<p>
-	  	This is an example content on the main page on right.
+	  	This is an example content on the second page on right.
 	  </p>
 
 	  <p>
