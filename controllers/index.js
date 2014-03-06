@@ -6,9 +6,12 @@ module.exports = function (app) {
     var model = new IndexModel();
 
     app.get('/', function (req, res) {
-        model.pjax = !!req.query.pjax;
+        var renderModel = {
+            page: model,
+            pjax: !!req.param('pjax')
+        };
 
-        res.render('index', model);
+        res.render('index', renderModel);
     });
 
 };

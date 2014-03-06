@@ -6,8 +6,11 @@ module.exports = function (app) {
     var model = new ThirdModel();
 
     app.get('/third', function (req, res) {
-    	model.pjax = !!req.query.pjax;
+    	var renderModel = {
+            page: model,
+            pjax: !!req.param('pjax')
+        };
 
-        res.render('third', model);
+        res.render('third', renderModel);
     });
 };

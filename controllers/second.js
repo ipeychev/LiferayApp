@@ -6,9 +6,12 @@ module.exports = function (app) {
     var model = new SecondModel();
 
     app.get('/second', function (req, res) {
-        model.pjax = !!req.query.pjax;
+        var renderModel = {
+            page: model,
+            pjax: !!req.param('pjax')
+        };
 
-        res.render('second', model);
+        res.render('second', renderModel);
     });
 
 };
