@@ -1,4 +1,10 @@
-{>"layouts/master" /}
+{^pjax}
+  {>"layouts/master" /}
+{:else}
+  {>"layouts/navbar" /}
+
+  {>"layouts/wrapper" /}
+{/pjax}
 
 {<title}
     Second page

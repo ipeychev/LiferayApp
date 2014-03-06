@@ -1,0 +1,19 @@
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <ul class="nav nav-pills">
+                <li class="{homePageClass}">
+                    <a href="/">Home</a>
+                </li>
+
+                <li class="{secondPageClass}">
+                    <a href="/second">Second page</a>
+                </li>
+
+                <li class="{thirdPageClass}">
+                    <a href="/third">Third page</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

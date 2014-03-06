@@ -13,7 +13,8 @@
                     selector: '.navbar.navbar-default',
                     destNode: '.navbar.navbar-default'
                 }
-            ]
+            ],
+            linkSelector: 'a'
         });
     });
 

@@ -1,0 +1,12 @@
+<div class="container">
+    {>"layouts/navbar" /}
+
+    {>"layouts/jumbotron" /}
+
+    {>"layouts/wrapper" /}
+
+    {>"layouts/footer" /}
+
+</div>
+
+{>"layouts/scripts" /}
