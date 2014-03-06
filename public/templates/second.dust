@@ -1,25 +1,25 @@
 {>"layouts/master" /}
 
 {<title}
-	Second page
+    Second page
 {/title}
 
 {<content_left}
   <p>
-  	This is an example content on the second page.
+    This is an example content on the second page.
   </p>
 
   <p>
-  	<a class="yui3-pjax" href="/second">Link to the second page</a>
+    <a class="yui3-pjax" href="/second">Link to the second page</a>
   </p>
 {/content_left}
 
 {<content_right}
-	<p>
-	  	This is an example content on the second page on right.
-	  </p>
+    <p>
+        This is an example content on the second page on right.
+      </p>
 
-	  <p>
-	  	<a class="yui3-pjax" href="/third">Link to the third page</a>
-	  </p>
+      <p>
+        <a class="yui3-pjax" href="/third">Link to the third page</a>
+      </p>
 {/content_right}

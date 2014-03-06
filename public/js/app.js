@@ -1,12 +1,19 @@
 ;(function() {
     'use strict';
 
-    YUI({
-        filter: 'raw',
-        combine: false
-    }).use('pjax-plugin', function (Y) {
-        Y.one('.wrapper').plug(Y.Plugin.Pjax, {
-            contentSelector: '.wrapper'
+    YUI().use('pjaxsteroids', function (Y) {
+        new Y.PJAXSteroids({
+            container: Y.config.doc,
+            contentSelector: [
+                {
+                    selector: '.wrapper',
+                    destNode: '.wrapper'
+                },
+                {
+                    selector: '.navbar.navbar-default',
+                    destNode: '.navbar.navbar-default'
+                }
+            ]
         });
     });
 
