@@ -17,5 +17,4 @@
             linkSelector: 'a'
         });
     });
-
 }());
