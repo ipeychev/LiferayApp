@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function SecondModel() {
-	return {
+    return {
         name: 'LiferayApp - Second page',
         secondPageClass: 'active'
     };

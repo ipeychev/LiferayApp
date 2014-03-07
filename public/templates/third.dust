@@ -10,6 +10,14 @@
   Third page
 {/title}
 
+{<content_left_class}
+  thirdPageLeft
+{/content_left_class}
+
+{<content_right_class}
+  thirdPageRight
+{/content_right_class}
+
 {<content_left}
   <p>
     This is an example content on the third page.

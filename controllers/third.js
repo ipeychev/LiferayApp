@@ -6,7 +6,7 @@ module.exports = function (app) {
     var model = new ThirdModel();
 
     app.get('/third', function (req, res) {
-    	var renderModel = {
+        var renderModel = {
             page: model,
             pjax: !!req.param('pjax')
         };

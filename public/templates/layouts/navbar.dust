@@ -2,15 +2,15 @@
     <div class="container-fluid">
         <div class="navbar-header">
             <ul class="nav nav-pills">
-                <li class="{homePageClass}">
+                <li class="{page.homePageClass}">
                     <a href="/">Home</a>
                 </li>
 
-                <li class="{secondPageClass}">
+                <li class="{page.secondPageClass}">
                     <a href="/second">Second page</a>
                 </li>
 
-                <li class="{thirdPageClass}">
+                <li class="{page.thirdPageClass}">
                     <a href="/third">Third page</a>
                 </li>
             </ul>

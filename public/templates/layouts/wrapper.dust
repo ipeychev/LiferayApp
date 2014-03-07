@@ -1,10 +1,10 @@
 <div class="wrapper">
     <div class="row marketing">
-        <div id="contentLeft" class="col-lg-6">
+        <div id="contentLeft" class="col-lg-6 {+content_left_class/}">
             {+content_left/}
         </div>
 
-        <div id="contentRight" class="col-lg-6">
+        <div id="contentRight" class="col-lg-6 {+content_right_class/}">
             {+content_right/}
         </div>
 

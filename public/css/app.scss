@@ -4,4 +4,14 @@ body {
 	h1 {
 		color: blue;
 	}
+
+	.wrapper {
+		.secondPageLeft, .thirdPageRight {
+			border: 1px solid red;
+		}
+
+		.secondPageRight, .thirdPageLeft {
+			border: 1px solid blue;
+		}
+	}
 }

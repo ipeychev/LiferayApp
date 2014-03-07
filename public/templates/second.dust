@@ -7,8 +7,16 @@
 {/pjax}
 
 {<title}
-    Second page
+  Second page
 {/title}
+
+{<content_left_class}
+  secondPageLeft
+{/content_left_class}
+
+{<content_right_class}
+  secondPageRight
+{/content_right_class}
 
 {<content_left}
   <p>
@@ -22,10 +30,10 @@
 
 {<content_right}
     <p>
-        This is an example content on the second page on right.
-      </p>
+      This is an example content on the second page on right.
+    </p>
 
-      <p>
-        <a class="yui3-pjax" href="/third">Link to the third page</a>
-      </p>
+    <p>
+      <a class="yui3-pjax" href="/third">Link to the third page</a>
+    </p>
 {/content_right}
