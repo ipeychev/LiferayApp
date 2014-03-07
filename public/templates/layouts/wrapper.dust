@@ -9,6 +9,6 @@
         </div>
 
         <script type="text/javascript">
-            console.log('a JavaScript in wrapper.');
+            console.log('a JavaScript code in .wrapper');
         </script>
 </div>
